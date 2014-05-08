@@ -127,6 +127,7 @@
 					<runTarget>http://localhost:8080/</runTarget>
 					<codeServerWorkDir>${project.build.directory}/codeServerWorkDir</codeServerWorkDir>
 					<workDir>${project.build.directory}/workDir</workDir>
+					
 				</configuration>
 				<executions>
 					<execution>

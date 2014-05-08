@@ -14,7 +14,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<vaadin.version>7.1.8</vaadin.version>
+		<vaadin.version>7.1.15</vaadin.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
 	</properties>
 	<repositories>
@@ -86,14 +86,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
 			<!-- As we are doing "inplace" GWT compilation, ensure the widgetset -->
 			<!-- directory is cleaned properly -->
 			<plugin>
@@ -133,7 +125,7 @@
 					<style>OBF</style>
 					<strict>true</strict>
 					<runTarget>http://localhost:8080/</runTarget>
-					<!-- <codeServerWorkDir${project.build.directory}/workDir></codeServerWorkDir> -->
+					<codeServerWorkDir>${project.build.directory}/codeServerWorkDir</codeServerWorkDir>
 					<workDir>${project.build.directory}/workDir</workDir>
 				</configuration>
 				<executions>
